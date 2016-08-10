@@ -2,9 +2,24 @@
 <html>
 <head>
   <title>Kat's Music Library</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
-  <h1>Kat's Music Library</h1>
-  <%= yield %>
+  <div class='page-wrap'>
+  <header>
+    <h1>Kat's Music Library</h1>
+    <ul>
+    <li><a href="/library">Library</a></li>
+    <li><a href="/artists">Artists</a></li>
+    <li><a href="/albums">Albums</a></li>
+    <li><a href="/artists/new">Add Artist</a></li>
+    <li><a href="/albums/new">Add Album</a></li>
+    </ul>
+  </header>
+  <div id="foreground"></div>
+    <%= yield %>
+  </div>
+  </div>
+  <footer class="site-footer">&copy2016 Katrina Coutts</footer>
 </body>
 </html>

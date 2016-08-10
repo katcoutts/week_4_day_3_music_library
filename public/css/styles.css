@@ -1,0 +1,91 @@
+body {
+  background: url("../images/girl_with_music_updated.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+
+#foreground{
+  position: relative;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  display: inline;
+  float: right;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+/* unvisited link */
+a {
+    color: hotpink;
+}
+
+
+/* mouse over link */
+a:hover {
+    color: #cc0099;
+}
+ 
+b{
+  color: grey;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+    color: #f1f1f1;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1 {
+font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h1, h2{
+  color: #ff3399;
+}
+
+header {
+  background-color: grey, 0.5;
+  min-width: 100%;
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+}
+
+.page-wrap {
+  min-height: calc(100vh - 80px);
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 22px; 
+}
+.site-footer {
+  width: 100%;
+  padding: 0px;
+  font-size: 10px;
+  text-align: center;
+}
