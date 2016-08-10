@@ -1,7 +1,11 @@
 <b>Name:</b>
 <p><%= @artist.name()  %></p>
 <b>Albums:</b>
-<p><%= @artist.albums %></p>
+<p><% album_names = []
+  @artist.albums.map do |album|
+  album_names << album.name %>
+  <%= album_names %>
+  <% end %></p>
 <a href="/artists/<%= @artist.id  %>/edit ">Edit</a>
 <p></p>
 <form action="/artists/<%= @artist.id  %>/delete" method="post">

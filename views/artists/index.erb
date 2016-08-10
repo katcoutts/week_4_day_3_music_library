@@ -4,7 +4,11 @@
   <b>Name:</b>
   <p><%= artist.name() %></p>
   <b>Albums:</b>
-  <p><%= artist.albums %>
+  <p><% album_names = []
+    artist.albums.map do |album|
+    album_names << album.name %>
+    <% end %>
+    <%= album_names %></p> 
   <a href="/artists/<%= artist.id %>">View</a>
   <hr>
 <% end %>

@@ -4,7 +4,8 @@
   <label for="name">Name:</label>
   <input type="text" name="name">
 
-  <select>
+  <label for="artist_id">Select an artist:</label>
+  <select name="artist_id">
     <% @artists.each do |artist| %>
       <option value="<%= artist.id %>"><%= artist.name %></option>
     <% end %>
@@ -12,3 +13,4 @@
 
   <input type='submit' value="Submit album">
 </form>
+

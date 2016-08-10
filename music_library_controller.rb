@@ -4,7 +4,6 @@ require( 'pry-byebug' )
 require_relative('./models/album') 
 require_relative('./models/artist')
 
-# NB the resource - which here is pizza - should always be plural
 
 # INDEX
 get '/albums' do
