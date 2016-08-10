@@ -1,0 +1,14 @@
+<h2>Add an album</h2>
+
+<form action="/albums" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name">
+
+  <select>
+    <% @artists.each do |artist| %>
+      <option value="<%= artist.id %>"><%= artist.name %></option>
+    <% end %>
+  </select>
+
+  <input type='submit' value="Submit album">
+</form>
