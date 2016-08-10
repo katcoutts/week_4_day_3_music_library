@@ -1,0 +1,25 @@
+<h2>Artists</h2>
+
+<% @artists.each do |artist| %>
+  <b>Name:</b>
+  <p><%= artist.name() %></p>
+  <b>Albums:</b>
+  <p><% album_names = []
+    artist.albums.map do |album|
+    album_names << album.name %>
+    <% end %>
+    <%= album_names %></p> 
+  <a href="/artists/<%= artist.id %>">View</a>
+  <hr>
+<% end %>
+
+<h2>Albums</h2>
+
+<% @albums.each do |album| %>
+  <b>Name:</b>
+  <p><%= album.name() %></p>
+  <b>Artist:</b>
+  <p><%= album.artist.name() %>
+  <a href="/albums/<%= album.id %>">View</a>
+  <hr>
+<% end %>

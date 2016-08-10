@@ -92,3 +92,9 @@ post '/artists/:id/delete' do
   redirect(to('/artists'))
 end
 
+get '/library' do 
+  @albums = Album.all()
+  @artists = Artist.all()
+  erb ( :'library/index' )
+end
+
